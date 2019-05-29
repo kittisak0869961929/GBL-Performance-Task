@@ -1,5 +1,13 @@
 # GBL-Performance-Task
 
+## Table of Contents
+
+1. [Overview](#OVERVIEW)
+2. [Feature Objectives](#FEATURE-OBJECTIVES)
+3. [Performance Objectives](#PERFORMANCE-OBJECTIVES)
+4. [Where to Start](#WHERE-TO-START)
+5. [Helpful Hints](#HELPFUL-HINTS)
+
 # OVERVIEW
 
 For this task, you will implement a simple tool/game that tests a few basic Unity skills. The program will essentially allow users to create objects, delete objects, and make objects spin. Created objects will be placed in a grid of a variable size that can also be set by the user. An example layout for the tool can be seen below.
