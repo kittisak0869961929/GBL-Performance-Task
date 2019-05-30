@@ -13,7 +13,9 @@
 For this task, you will implement a simple tool/game that tests a few basic Unity skills. The program will essentially allow users to create objects, delete objects, and make objects spin. Created objects will be placed in a grid of a variable size that can also be set by the user. An example layout for the tool can be seen below.
 
 Some of the project has been given to you already, with instructions on how to duplicate the repository to your own Github account later in this document. Be sure to log your changes in Git as you go (as you would with any project).
- 
+
+The rest of this document lays out the requirements for the performance evaluation, but feel free to add an extra feature or two if you feel they add useful functionality or demonstrate other proficiencies within the game engine.
+
 ![Example](Example/ExampleLayout.png)
  
 In this example, the dimensions of the grid are set to be 4x4, there have been 14 objects created, and the 5th object (1st object in the second row) is set to be spinning.
@@ -34,9 +36,13 @@ The requirements of different mechanics of the tool are described in more detail
 
 Interaction between UI elements such as buttons or input fields must trigger the execution of code in order to fulfil the requirements stated above.
 
+## PREFAB CREATION
+
+This task only requires one prefab, for use as a blueprint to instantiate objects from. This prefab should be clean, functional, and well structured. In my example above, I created a Cube and attached an Animator component.
+
 ## OBJECT SPAWNING/DESTROYING
 
-Objects should be instantiated and destroyed using standard Unity functions. Objects created must be created using a prefab as a template. This means you must first create a prefab with whatever components necessary to complete the task. In my example above, I created a Cube and attached an Animator component, which I then assigned an Animator Controller to (you will be provided with an Animator controller under Assets/Art/Animators).
+Objects should be instantiated and destroyed using standard Unity functions. Instantiation of objects should be done by using your predefined prefab.
 
 ## OBJECT PLACEMENT
 
@@ -48,8 +54,7 @@ When an object exists in the world, it can be clicked to make it spin. This is d
 
 ## EDGE CASE HANDLING
 
-You will need to handle edge cases as you see fit. As an example, will the “Add” button still be clickable when the grid has been filled up?
-
+You will need to handle edge cases as you see fit. As an example, will the “Add” button still be clickable when the grid has been filled up? With any software, there are many edge cases to consider. Address any of these cases with reasonable solutions and be sure to add comments on why and how you handled these situations.
 
 # PERFORMANCE OBJECTIVES
 
@@ -65,11 +70,20 @@ Scripts, prefabs, and all other files and objects should be well maintained in a
 
 ## CODE READABILITY
 
-Code should be consistent and understandable.
+Code should be consistent and understandable. Factors contributing to this metric could be:
+
+- Consistent line spacing or indents
+- Consistent scope (curly brace) formatting
+- Consistent comment style (Visual Studio has a header comment default that is good to use)
+- Well-named variables and functions
 
 ## CODE QUALITY
 
-Good practices should be implemented when maintaining collections of objects, writing functions or loops, or developing in general.
+Good practices should be implemented when maintaining collections of objects, writing functions or loops, or developing in general. A few examples of good practices:
+
+- Using defined constants as opposed to in-line values
+- Using clear, simple statements that can be understood on their own
+- Only including required code inside of loops or Update functions
 
 ## DOCUMENTATION
 
@@ -93,25 +107,25 @@ NOTE: DO NOT fork the below repository, forked repositories cannot be made priva
 
 1. Sign into Github (create an account if necessary)
 2. Click to create a new repository (Repositories Tab > New)
-3. Click the link to Import a repository
+3. Click the link to **Import a repository**
 4. For the old repo’s clone URL, add https://github.com/bradenroper/GBL-Performance-Task.git
-5. Mark the repository as Private
+5. Mark the repository as **Private**
 6. Give the repository a name (I’m not picky)
-7. Click to Begin Import 
+7. Click to **Begin Import**
 8. Wait a minute or two while Github creates the duplicate repo
 9. Navigate to the new, private repository (User Icon in top right > Your Repositories)
-10. Open the Settings tab and select Collaborators on the left menu
-11. Add me (bradenroper) as a collaborator so that I can see your work
+10. Open the **Settings** tab and select **Collaborators** on the left menu
+11. Add me (**bradenroper**) as a collaborator so that I can see your work
+
 You can now begin working but remember to commit and push your work as you go!
 
- 
 # HELPFUL HINTS
 
 Some helpful areas of Unity documentation for this project are listed below.
 
-- Prefabs: prefabs are useful for many reasons, including being used as a blueprint for spawned objects
+- **Prefabs:** prefabs are useful for many reasons, including being used as a blueprint for spawned objects
 https://docs.unity3d.com/Manual/Prefabs.html
-- Animator Parameters: setting these ultimately changes what animation state will be transitioned to.
+- **Animator Parameters:** setting these ultimately changes what animation state will be transitioned to.
 https://docs.unity3d.com/Manual/AnimationParameters.html
-- Raycasting: this is used to determine if clicks hit in-world objects, like detecting clicks on a cube.
+- **Raycasting:** this is used to determine if clicks hit in-world objects, like detecting clicks on a cube.
 https://docs.unity3d.com/ScriptReference/Physics.Raycast.html
