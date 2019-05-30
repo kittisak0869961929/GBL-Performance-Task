@@ -1,6 +1,6 @@
 # GBL-Performance-Task
 
-### Table of Contents
+## Table of Contents
 
 1. [Overview](#Overview)
 2. [Feature Objectives](#Feature-Objectives)
@@ -103,7 +103,7 @@ This version of Unity (2018.4.1f1 Personal) can be found at https://unity3d.com/
 
 If you do not have a Github account already, you will need to create one. After account creation, you can set up a copy of the initial repository and begin working.
 
-NOTE: DO NOT fork the below repository, forked repositories cannot be made private. To maintain privacy of all candidates for the position, you should duplicate the following repository so that you may mark it private on Github. To accomplish this, follow the instructions below.
+**NOTE:** DO NOT fork the below repository, forked repositories cannot be made private. To maintain privacy of all candidates for the position, you should duplicate the following repository so that you may mark it private on Github. To accomplish this, follow the instructions below.
 
 1. Sign into Github (create an account if necessary)
 2. Click to create a new repository (Repositories Tab > New)
